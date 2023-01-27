@@ -4,7 +4,49 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
     <title>Library</title>
   </head>
-  <body></body>
+  <body>
+    <main>
+      <form>
+        <div>
+          <label for="bname">Book name: </label>
+          <input id="bname" type="text" />
+        </div>
+        <div>
+          <input id="submit" type="submit" />
+        </div>
+      </form>
+      <table class="styled-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Author</th>
+            <th>Pages</th>
+            <th>Year</th>
+            <th>Read</th>
+            <th>Remove</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Test</td>
+            <td>test</td>
+            <td>test</td>
+            <td>test</td>
+            <td>
+              <input type="checkbox" name="yes" id="yes" /><label for="yes"
+                >Yes</label
+              >
+            </td>
+            <td>
+              <button>Delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+  </body>
 </html>
