@@ -10,43 +10,40 @@
   </head>
   <body>
     <main>
-      <form>
-        <div>
-          <label for="bname">Book name: </label>
-          <input id="bname" type="text" />
-        </div>
-        <div>
-          <input id="submit" type="submit" />
-        </div>
-      </form>
-      <table class="styled-table">
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Author</th>
-            <th>Pages</th>
-            <th>Year</th>
-            <th>Read</th>
-            <th>Remove</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Test</td>
-            <td>test</td>
-            <td>test</td>
-            <td>test</td>
-            <td>
-              <input type="checkbox" name="yes" id="yes" /><label for="yes"
-                >Yes</label
-              >
-            </td>
-            <td>
-              <button>Delete</button>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+      <button class="open-button" onclick="openForm()">New sneaker</button>
+      <div class="form-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+          <label for="btitle"><b>Nome</b></label>
+          <input type="text" placeholder="Panda Low" name="btitle" required />
+          <label for="bauthor"><b>Marca</b></label>
+          <input type="text" placeholder="Nike" name="bauthor" required />
+          <label for="bpages"><b>Price (&#165;)</b></label>
+          <input type="number" placeholder="310" name="bpages" required />
+          <label for="byear"><b>Year</b></label>
+          <input type="number" placeholder="2015" name="byear" required />
+          <button type="submit" class="btn">Add sneaker</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">
+            Close
+          </button>
+        </form>
+      </div>
+      <div class="table-container">
+        <table class="styled-table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Brand</th>
+              <th>Price (&#165;)</th>
+              <th>Year</th>
+              <th>Ta na mao?</th>
+              <th>Remove</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr></tr>
+          </tbody>
+        </table>
+      </div>
     </main>
   </body>
 </html>
