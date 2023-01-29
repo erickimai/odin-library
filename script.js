@@ -60,6 +60,10 @@ form.addEventListener("submit", (e) => {
     form.elements.byear.value
   );
   displayBook(book);
+  form.elements.btitle.value = "";
+  form.elements.bauthor.value = "";
+  form.elements.bpages.value = "";
+  form.elements.byear.value = "";
 });
 
 function openForm() {
