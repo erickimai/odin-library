@@ -1,4 +1,3 @@
-const myLibrary = [];
 const form = document.querySelector("form");
 const tbody = document.querySelector("tbody");
 
