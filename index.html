@@ -10,7 +10,9 @@
   </head>
   <body>
     <main>
-      <button class="open-button" onclick="openForm()">New sneaker</button>
+      <button class="open-button" onclick="CreateForm.openForm()">
+        New sneaker
+      </button>
       <div class="form-popup" id="myForm">
         <form action="/action_page.php" class="form-container">
           <label for="btitle"><b>Title</b></label>
@@ -22,7 +24,11 @@
           <label for="byear"><b>Year</b></label>
           <input type="number" placeholder="2015" name="byear" required />
           <button type="submit" class="btn">Add book</button>
-          <button type="button" class="btn cancel" onclick="closeForm()">
+          <button
+            type="button"
+            class="btn cancel"
+            onclick="CreateForm.closeForm()"
+          >
             Close
           </button>
         </form>
